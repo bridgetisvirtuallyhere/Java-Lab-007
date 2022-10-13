@@ -11,7 +11,7 @@ public class WhileLoops {
         int even = 0;
         int odd = 0;
 
-        System.out.println("Type numbers:");
+        System.out.println("Type a number:");
 
         int numbers;
         while (true) {
@@ -23,31 +23,31 @@ public class WhileLoops {
             if (numbers % 2 == 0) {
                 even++;
             }
-            System.out.println("Even numbers: " + even);
-            System.out.println("Odd numbers: " + odd);
-            System.out.println("Type more numbers:");
             if (numbers == 0) {
                 break;
             }
+            System.out.println("Even numbers: " + even);
+            System.out.println("Odd numbers: " + odd);
+            System.out.println("Type another number (0 to exit): ");
+            }
         }
-    }
 
     public static double mean() {   // In the WhileLoops class, write a method named mean
 
-        int i=0;
-        float sum=0;
+        int i = 0;
+        float sum = 0;
 
         System.out.println("Enter the size of array: ");
         int n = s.nextInt(); //that contains a while loop reads in integers from System.in
         float arr[] = new float[n];
-        System.out.println("Enter " + n + " array elements: ");
+        System.out.println("Enter " + n + " numbers: ");
         while(i<n) { //and calculates the mean of the numbers entered.
             arr[i] = s.nextInt();
-            sum=sum+arr[i];
+            sum += arr[i];
             i++;
         }
         float average = sum/n;
-        System.out.println("Average of number is : "+average);
+        System.out.println("Average of the numbers is : "+average);
         return 0;
     }
 
